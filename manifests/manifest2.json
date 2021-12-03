@@ -1,271 +1,419 @@
 {
-  "@context" : "http://iiif.io/api/presentation/2/context.json",
-  "@id" : "https://markw-bl.github.io/Example-manifest/manifests/manifest2.json",
-  "@type" : "sc:Manifest",
-  "label" : "[Click to edit label]",
-  "metadata" : [ ],
-  "description" : [ {
-    "@value" : "[Click to edit description]",
-    "@language" : "en"
-  } ],
-  "license" : "https://creativecommons.org/licenses/by/3.0/",
-  "attribution" : "[Click to edit attribution]",
-  "sequences" : [ {
-    "@id" : "http://d44bd26d-1d0b-42a4-9fbe-dd9b9711ce0e",
-    "@type" : "sc:Sequence",
-    "label" : [ {
-      "@value" : "Normal Sequence",
-      "@language" : "en"
-    } ],
-    "canvases" : [ {
-      "@id" : "http://688a2262-bd95-4bfa-81b5-5e4dc20c67f5",
-      "@type" : "sc:Canvas",
-      "label" : "knight on horseback",
-      "height" : 4072,
-      "width" : 2900,
-      "images" : [ {
-        "@context" : "http://iiif.io/api/presentation/2/context.json",
-        "@id" : "http://f06796dd-c081-498d-88e4-d0531e58e171",
-        "@type" : "oa:Annotation",
-        "motivation" : "sc:painting",
-        "resource" : {
-          "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100054606114.0x00000e/full/full/0/default.jpg",
-          "@type" : "dctypes:Image",
-          "format" : "image/jpeg",
-          "service" : {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100054606114.0x00000e",
-            "profile" : [ "http://iiif.io/api/image/2/level2.json", {
-              "maxHeight" : 2000,
-              "maxWidth" : 2000,
-              "qualities" : [ "gray", "color", "bitonal" ],
-              "supports" : [ "rotationArbitrary", "mirroring", "regionSquare", "profileLinkHeader" ]
-            } ]
-          },
-          "height" : 4072,
-          "width" : 2900
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://markw-bl.github.io/Example-manifest/manifests/manifest2.json",
+  "@type": "sc:Manifest",
+  "label": "[Click to edit label]",
+  "metadata": [],
+  "description": [
+    {
+      "@value": "Description of book or manifest",
+      "@language": "en"
+    }
+  ],
+  "license": "https://creativecommons.org/licenses/by/3.0/",
+  "attribution": "[Click to edit attribution]",
+  "sequences": [
+    {
+      "@id": "http://d44bd26d-1d0b-42a4-9fbe-dd9b9711ce0e",
+      "@type": "sc:Sequence",
+      "label": [
+        {
+          "@value": "Normal Sequence",
+          "@language": "en"
+        }
+      ],
+      "canvases": [
+        {
+          "@id": "http://688a2262-bd95-4bfa-81b5-5e4dc20c67f5",
+          "@type": "sc:Canvas",
+          "label": "knight on horseback",
+          "height": 4072,
+          "width": 2900,
+          "images": [
+            {
+              "@context": "http://iiif.io/api/presentation/2/context.json",
+              "@id": "http://f06796dd-c081-498d-88e4-d0531e58e171",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100054606114.0x00000e/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100054606114.0x00000e",
+                  "profile": [
+                    "http://iiif.io/api/image/2/level2.json",
+                    {
+                      "maxHeight": 2000,
+                      "maxWidth": 2000,
+                      "qualities": [
+                        "gray",
+                        "color",
+                        "bitonal"
+                      ],
+                      "supports": [
+                        "rotationArbitrary",
+                        "mirroring",
+                        "regionSquare",
+                        "profileLinkHeader"
+                      ]
+                    }
+                  ]
+                },
+                "height": 4072,
+                "width": 2900
+              },
+              "on": "http://688a2262-bd95-4bfa-81b5-5e4dc20c67f5"
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "https://markw-bl.github.io/Example-manifest/annotations/4516b18825ab4b651fc51e05906a4644.json",
+              "@type": "sc:AnnotationList",
+              "label": "My fantastic annotations"
+            }
+          ],
+          "related": ""
         },
-        "on" : "http://688a2262-bd95-4bfa-81b5-5e4dc20c67f5"
-      } ],
-      "related" : ""
-    }, {
-      "@id" : "http://0dc6a0f4-e967-44ac-b529-bd9c66fd00a5",
-      "@type" : "sc:Canvas",
-      "label" : "Lear 1",
-      "height" : 6766,
-      "width" : 4040,
-      "images" : [ {
-        "@context" : "http://iiif.io/api/presentation/2/context.json",
-        "@id" : "http://31f4cb91-ad21-4eb7-8497-551f0049e40e",
-        "@type" : "oa:Annotation",
-        "motivation" : "sc:painting",
-        "resource" : {
-          "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100099241390.0x00001f/full/full/0/default.jpg",
-          "@type" : "dctypes:Image",
-          "format" : "image/jpeg",
-          "service" : {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100099241390.0x00001f",
-            "profile" : [ "http://iiif.io/api/image/2/level2.json", {
-              "maxHeight" : 2000,
-              "maxWidth" : 2000,
-              "qualities" : [ "gray", "color", "bitonal" ],
-              "supports" : [ "rotationArbitrary", "mirroring", "regionSquare", "profileLinkHeader" ]
-            } ]
-          },
-          "height" : 6766,
-          "width" : 4040
+        {
+          "@id": "http://0dc6a0f4-e967-44ac-b529-bd9c66fd00a5",
+          "@type": "sc:Canvas",
+          "label": "Lear 1",
+          "height": 6766,
+          "width": 4040,
+          "images": [
+            {
+              "@context": "http://iiif.io/api/presentation/2/context.json",
+              "@id": "http://31f4cb91-ad21-4eb7-8497-551f0049e40e",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100099241390.0x00001f/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100099241390.0x00001f",
+                  "profile": [
+                    "http://iiif.io/api/image/2/level2.json",
+                    {
+                      "maxHeight": 2000,
+                      "maxWidth": 2000,
+                      "qualities": [
+                        "gray",
+                        "color",
+                        "bitonal"
+                      ],
+                      "supports": [
+                        "rotationArbitrary",
+                        "mirroring",
+                        "regionSquare",
+                        "profileLinkHeader"
+                      ]
+                    }
+                  ]
+                },
+                "height": 6766,
+                "width": 4040
+              },
+              "on": "http://0dc6a0f4-e967-44ac-b529-bd9c66fd00a5"
+            }
+          ],
+          "related": ""
         },
-        "on" : "http://0dc6a0f4-e967-44ac-b529-bd9c66fd00a5"
-      } ],
-      "related" : ""
-    }, {
-      "@id" : "http://d95cbeed-d92f-45c5-9162-31719e916029",
-      "@type" : "sc:Canvas",
-      "label" : "Lear 2",
-      "height" : 6910,
-      "width" : 4293,
-      "images" : [ {
-        "@context" : "http://iiif.io/api/presentation/2/context.json",
-        "@id" : "http://0fc23119-a9b4-47d4-95ca-c6fa0cdc3caf",
-        "@type" : "oa:Annotation",
-        "motivation" : "sc:painting",
-        "resource" : {
-          "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100099241390.0x00004d/full/full/0/default.jpg",
-          "@type" : "dctypes:Image",
-          "format" : "image/jpeg",
-          "service" : {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100099241390.0x00004d",
-            "profile" : [ "http://iiif.io/api/image/2/level2.json", {
-              "maxHeight" : 2000,
-              "maxWidth" : 2000,
-              "qualities" : [ "gray", "color", "bitonal" ],
-              "supports" : [ "rotationArbitrary", "mirroring", "regionSquare", "profileLinkHeader" ]
-            } ]
-          },
-          "height" : 6910,
-          "width" : 4293
+        {
+          "@id": "http://d95cbeed-d92f-45c5-9162-31719e916029",
+          "@type": "sc:Canvas",
+          "label": "Lear 2",
+          "height": 6910,
+          "width": 4293,
+          "images": [
+            {
+              "@context": "http://iiif.io/api/presentation/2/context.json",
+              "@id": "http://0fc23119-a9b4-47d4-95ca-c6fa0cdc3caf",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100099241390.0x00004d/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100099241390.0x00004d",
+                  "profile": [
+                    "http://iiif.io/api/image/2/level2.json",
+                    {
+                      "maxHeight": 2000,
+                      "maxWidth": 2000,
+                      "qualities": [
+                        "gray",
+                        "color",
+                        "bitonal"
+                      ],
+                      "supports": [
+                        "rotationArbitrary",
+                        "mirroring",
+                        "regionSquare",
+                        "profileLinkHeader"
+                      ]
+                    }
+                  ]
+                },
+                "height": 6910,
+                "width": 4293
+              },
+              "on": "http://d95cbeed-d92f-45c5-9162-31719e916029"
+            }
+          ],
+          "related": ""
         },
-        "on" : "http://d95cbeed-d92f-45c5-9162-31719e916029"
-      } ],
-      "related" : ""
-    }, {
-      "@id" : "http://86fe23fa-a244-4a48-92ec-56dc586e28a8",
-      "@type" : "sc:Canvas",
-      "label" : "Lear 3",
-      "height" : 6908,
-      "width" : 4307,
-      "images" : [ {
-        "@context" : "http://iiif.io/api/presentation/2/context.json",
-        "@id" : "http://f56edba6-b7ed-4275-8d8e-16395b6ef8f2",
-        "@type" : "oa:Annotation",
-        "motivation" : "sc:painting",
-        "resource" : {
-          "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100099241390.0x000001/full/full/0/default.jpg",
-          "@type" : "dctypes:Image",
-          "format" : "image/jpeg",
-          "service" : {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100099241390.0x000001",
-            "profile" : [ "http://iiif.io/api/image/2/level2.json", {
-              "maxHeight" : 2000,
-              "maxWidth" : 2000,
-              "qualities" : [ "gray", "color", "bitonal" ],
-              "supports" : [ "rotationArbitrary", "mirroring", "regionSquare", "profileLinkHeader" ]
-            } ]
-          },
-          "height" : 6908,
-          "width" : 4307
+        {
+          "@id": "http://86fe23fa-a244-4a48-92ec-56dc586e28a8",
+          "@type": "sc:Canvas",
+          "label": "Lear 3",
+          "height": 6908,
+          "width": 4307,
+          "images": [
+            {
+              "@context": "http://iiif.io/api/presentation/2/context.json",
+              "@id": "http://f56edba6-b7ed-4275-8d8e-16395b6ef8f2",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100099241390.0x000001/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100099241390.0x000001",
+                  "profile": [
+                    "http://iiif.io/api/image/2/level2.json",
+                    {
+                      "maxHeight": 2000,
+                      "maxWidth": 2000,
+                      "qualities": [
+                        "gray",
+                        "color",
+                        "bitonal"
+                      ],
+                      "supports": [
+                        "rotationArbitrary",
+                        "mirroring",
+                        "regionSquare",
+                        "profileLinkHeader"
+                      ]
+                    }
+                  ]
+                },
+                "height": 6908,
+                "width": 4307
+              },
+              "on": "http://86fe23fa-a244-4a48-92ec-56dc586e28a8"
+            }
+          ],
+          "related": ""
         },
-        "on" : "http://86fe23fa-a244-4a48-92ec-56dc586e28a8"
-      } ],
-      "related" : ""
-    }, {
-      "@id" : "http://fca6f544-f851-49b2-90d8-58b5160a8e8c",
-      "@type" : "sc:Canvas",
-      "label" : "Japanese book art 1",
-      "height" : 4978,
-      "width" : 3391,
-      "images" : [ {
-        "@context" : "http://iiif.io/api/presentation/2/context.json",
-        "@id" : "http://8482acb7-9152-4501-89e1-74095056cab0",
-        "@type" : "oa:Annotation",
-        "motivation" : "sc:painting",
-        "resource" : {
-          "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x000006/full/full/0/default.jpg",
-          "@type" : "dctypes:Image",
-          "format" : "image/jpeg",
-          "service" : {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x000006",
-            "profile" : [ "http://iiif.io/api/image/2/level2.json", {
-              "maxHeight" : 2000,
-              "maxWidth" : 2000,
-              "qualities" : [ "gray", "color", "bitonal" ],
-              "supports" : [ "rotationArbitrary", "mirroring", "regionSquare", "profileLinkHeader" ]
-            } ]
-          },
-          "height" : 4978,
-          "width" : 3391
+        {
+          "@id": "http://fca6f544-f851-49b2-90d8-58b5160a8e8c",
+          "@type": "sc:Canvas",
+          "label": "Japanese book art 1",
+          "height": 4978,
+          "width": 3391,
+          "images": [
+            {
+              "@context": "http://iiif.io/api/presentation/2/context.json",
+              "@id": "http://8482acb7-9152-4501-89e1-74095056cab0",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x000006/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x000006",
+                  "profile": [
+                    "http://iiif.io/api/image/2/level2.json",
+                    {
+                      "maxHeight": 2000,
+                      "maxWidth": 2000,
+                      "qualities": [
+                        "gray",
+                        "color",
+                        "bitonal"
+                      ],
+                      "supports": [
+                        "rotationArbitrary",
+                        "mirroring",
+                        "regionSquare",
+                        "profileLinkHeader"
+                      ]
+                    }
+                  ]
+                },
+                "height": 4978,
+                "width": 3391
+              },
+              "on": "http://fca6f544-f851-49b2-90d8-58b5160a8e8c"
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "https://markw-bl.github.io/Example-manifest/annotations/0943048a2dd53d01f1bd373dbe65a64d.json",
+              "@type": "sc:AnnotationList",
+              "label": "My fantastic annotations"
+            }
+          ],
+          "related": ""
         },
-        "on" : "http://fca6f544-f851-49b2-90d8-58b5160a8e8c"
-      } ],
-      "related" : ""
-    }, {
-      "@id" : "http://d0e3162c-4d6d-4225-bb69-1bf1c9e53c13",
-      "@type" : "sc:Canvas",
-      "label" : "Japanese book art 2",
-      "height" : 4978,
-      "width" : 3408,
-      "images" : [ {
-        "@context" : "http://iiif.io/api/presentation/2/context.json",
-        "@id" : "http://857d0891-85da-4cba-b1a5-719da35480dd",
-        "@type" : "oa:Annotation",
-        "motivation" : "sc:painting",
-        "resource" : {
-          "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x000007/full/full/0/default.jpg",
-          "@type" : "dctypes:Image",
-          "format" : "image/jpeg",
-          "service" : {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x000007",
-            "profile" : [ "http://iiif.io/api/image/2/level2.json", {
-              "maxHeight" : 2000,
-              "maxWidth" : 2000,
-              "qualities" : [ "gray", "color", "bitonal" ],
-              "supports" : [ "rotationArbitrary", "mirroring", "regionSquare", "profileLinkHeader" ]
-            } ]
-          },
-          "height" : 4978,
-          "width" : 3408
+        {
+          "@id": "http://d0e3162c-4d6d-4225-bb69-1bf1c9e53c13",
+          "@type": "sc:Canvas",
+          "label": "Japanese book art 2",
+          "height": 4978,
+          "width": 3408,
+          "images": [
+            {
+              "@context": "http://iiif.io/api/presentation/2/context.json",
+              "@id": "http://857d0891-85da-4cba-b1a5-719da35480dd",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x000007/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x000007",
+                  "profile": [
+                    "http://iiif.io/api/image/2/level2.json",
+                    {
+                      "maxHeight": 2000,
+                      "maxWidth": 2000,
+                      "qualities": [
+                        "gray",
+                        "color",
+                        "bitonal"
+                      ],
+                      "supports": [
+                        "rotationArbitrary",
+                        "mirroring",
+                        "regionSquare",
+                        "profileLinkHeader"
+                      ]
+                    }
+                  ]
+                },
+                "height": 4978,
+                "width": 3408
+              },
+              "on": "http://d0e3162c-4d6d-4225-bb69-1bf1c9e53c13"
+            }
+          ],
+          "related": ""
         },
-        "on" : "http://d0e3162c-4d6d-4225-bb69-1bf1c9e53c13"
-      } ],
-      "related" : ""
-    }, {
-      "@id" : "http://b10e573f-d846-4100-a778-8090555ab183",
-      "@type" : "sc:Canvas",
-      "label" : "Japanese book art 3",
-      "height" : 4978,
-      "width" : 3363,
-      "images" : [ {
-        "@context" : "http://iiif.io/api/presentation/2/context.json",
-        "@id" : "http://a195f79c-57b8-444f-8d1c-4e9f3780be58",
-        "@type" : "oa:Annotation",
-        "motivation" : "sc:painting",
-        "resource" : {
-          "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x00000d/full/full/0/default.jpg",
-          "@type" : "dctypes:Image",
-          "format" : "image/jpeg",
-          "service" : {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x00000d",
-            "profile" : [ "http://iiif.io/api/image/2/level2.json", {
-              "maxHeight" : 2000,
-              "maxWidth" : 2000,
-              "qualities" : [ "gray", "color", "bitonal" ],
-              "supports" : [ "rotationArbitrary", "mirroring", "regionSquare", "profileLinkHeader" ]
-            } ]
-          },
-          "height" : 4978,
-          "width" : 3363
+        {
+          "@id": "http://b10e573f-d846-4100-a778-8090555ab183",
+          "@type": "sc:Canvas",
+          "label": "Japanese book art 3",
+          "height": 4978,
+          "width": 3363,
+          "images": [
+            {
+              "@context": "http://iiif.io/api/presentation/2/context.json",
+              "@id": "http://a195f79c-57b8-444f-8d1c-4e9f3780be58",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x00000d/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x00000d",
+                  "profile": [
+                    "http://iiif.io/api/image/2/level2.json",
+                    {
+                      "maxHeight": 2000,
+                      "maxWidth": 2000,
+                      "qualities": [
+                        "gray",
+                        "color",
+                        "bitonal"
+                      ],
+                      "supports": [
+                        "rotationArbitrary",
+                        "mirroring",
+                        "regionSquare",
+                        "profileLinkHeader"
+                      ]
+                    }
+                  ]
+                },
+                "height": 4978,
+                "width": 3363
+              },
+              "on": "http://b10e573f-d846-4100-a778-8090555ab183"
+            }
+          ],
+          "otherContent": [
+            {
+              "@id": "https://markw-bl.github.io/Example-manifest/annotations/2892814d2a7bf3b663f9725eee1e9329.json",
+              "@type": "sc:AnnotationList",
+              "label": "My fantastic annotations"
+            }
+          ],
+          "related": ""
         },
-        "on" : "http://b10e573f-d846-4100-a778-8090555ab183"
-      } ],
-      "related" : ""
-    }, {
-      "@id" : "http://c77e195e-9b69-4067-82fd-417ea77c0a47",
-      "@type" : "sc:Canvas",
-      "label" : "Japanese book art 4",
-      "height" : 4978,
-      "width" : 3363,
-      "images" : [ {
-        "@context" : "http://iiif.io/api/presentation/2/context.json",
-        "@id" : "http://2336c698-7cc7-4e6c-8ae2-0f5eab08a5a7",
-        "@type" : "oa:Annotation",
-        "motivation" : "sc:painting",
-        "resource" : {
-          "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x00001d/full/full/0/default.jpg",
-          "@type" : "dctypes:Image",
-          "format" : "image/jpeg",
-          "service" : {
-            "@context" : "http://iiif.io/api/image/2/context.json",
-            "@id" : "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x00001d",
-            "profile" : [ "http://iiif.io/api/image/2/level2.json", {
-              "maxHeight" : 2000,
-              "maxWidth" : 2000,
-              "qualities" : [ "gray", "color", "bitonal" ],
-              "supports" : [ "rotationArbitrary", "mirroring", "regionSquare", "profileLinkHeader" ]
-            } ]
-          },
-          "height" : 4978,
-          "width" : 3363
-        },
-        "on" : "http://c77e195e-9b69-4067-82fd-417ea77c0a47"
-      } ],
-      "related" : ""
-    } ]
-  } ],
-  "structures" : [ ]
+        {
+          "@id": "http://c77e195e-9b69-4067-82fd-417ea77c0a47",
+          "@type": "sc:Canvas",
+          "label": "Japanese book art 4",
+          "height": 4978,
+          "width": 3363,
+          "images": [
+            {
+              "@context": "http://iiif.io/api/presentation/2/context.json",
+              "@id": "http://2336c698-7cc7-4e6c-8ae2-0f5eab08a5a7",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x00001d/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://api.bl.uk/image/iiif/ark:/81055/vdc_100101760850.0x00001d",
+                  "profile": [
+                    "http://iiif.io/api/image/2/level2.json",
+                    {
+                      "maxHeight": 2000,
+                      "maxWidth": 2000,
+                      "qualities": [
+                        "gray",
+                        "color",
+                        "bitonal"
+                      ],
+                      "supports": [
+                        "rotationArbitrary",
+                        "mirroring",
+                        "regionSquare",
+                        "profileLinkHeader"
+                      ]
+                    }
+                  ]
+                },
+                "height": 4978,
+                "width": 3363
+              },
+              "on": "http://c77e195e-9b69-4067-82fd-417ea77c0a47"
+            }
+          ],
+          "related": ""
+        }
+      ]
+    }
+  ],
+  "structures": []
 }
