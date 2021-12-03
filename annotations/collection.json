@@ -1,6 +1,6 @@
 {
   "@type" : "sc:Layer",
-  "otherContent" : [ "https://markw-bl.github.io/Example-manifest/annotations/4516b18825ab4b651fc51e05906a4644.json", "https://markw-bl.github.io/Example-manifest/annotations/0943048a2dd53d01f1bd373dbe65a64d.json" ],
+  "otherContent" : [ "https://markw-bl.github.io/Example-manifest/annotations/4516b18825ab4b651fc51e05906a4644.json", "https://markw-bl.github.io/Example-manifest/annotations/0943048a2dd53d01f1bd373dbe65a64d.json", "https://markw-bl.github.io/Example-manifest/annotations/2892814d2a7bf3b663f9725eee1e9329.json" ],
   "@id" : "https://markw-bl.github.io/Example-manifest/annotations/collection.json",
   "label" : "All annotations loaded in markw-bl/Example-manifest project",
   "@context" : "http://iiif.io/api/presentation/2/context.json"
